@@ -11,3 +11,9 @@
     background: black;
   }
 } */
+
+@layer components {
+  .container-screen {
+    @apply mx-auto max-w-7xl;
+  }
+}
