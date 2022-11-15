@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@emotion/react': ^11.10.5
+  '@iconify/react': ^4.0.0
   '@mantine/core': ^5.7.2
   '@mantine/dates': ^5.7.2
   '@mantine/form': ^5.7.2
@@ -40,6 +41,7 @@ dependencies:
   typescript: 4.8.4
 
 devDependencies:
+  '@iconify/react': 4.0.0_react@18.2.0
   autoprefixer: 10.4.13_postcss@8.4.19
   postcss: 8.4.19
   tailwindcss: 3.2.4_postcss@8.4.19
@@ -283,6 +285,19 @@ packages:
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: false
+
+  /@iconify/react/4.0.0_react@18.2.0:
+    resolution: {integrity: sha512-YE+z5PCegYyuJtLR6KBbJNlssmuVgRyFyRxcgxSPVkN3Gsm7npSzrUh+gWlBxrNb5g4Q6Nnb1gczPBNcwtUpng==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 18.2.0
+    dev: true
+
+  /@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
 
   /@mantine/core/5.7.2_s42f3uthtxnh7bllormamvwjhq:
     resolution: {integrity: sha512-cDDvlYhDCzREfIZ33CRLQpXlv+UXRb4VBZWbfYxWXTRPV6gKNGXwlVmXcdDUJCcjRWLh9Wc4erWT8gdTAbvzsQ==}
@@ -1896,7 +1911,6 @@ packages:
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
-    dev: false
 
   /js-yaml/4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -1980,7 +1994,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -2388,7 +2401,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /read-cache/1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
