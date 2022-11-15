@@ -3,7 +3,7 @@ import Registerform from "../../../compontents/Registerform";
 
 export default function index() {
   return (
-    <section className="bg-primary-500 px-6 py-12">
+    <section className="bg-primary-600 px-6 py-12">
       <div className="border rounded-lg p-4 bg-white">
         <h1 className="uppercase font-bold text-xl text-center py-4">
           Sign up
