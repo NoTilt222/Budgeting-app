@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Registerform from "../../compontents/Registerform";
+import Registerform from "../../../compontents/Registerform";
 
 export default function index() {
   return (
