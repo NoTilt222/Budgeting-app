@@ -60,7 +60,7 @@ export default function index() {
     <FullWidthLayout>
       <section className="space-y-4 px-4 h-screen">
         <Breadcrumbs className="mt-4 text">{links}</Breadcrumbs>
-        <h2 className="text-center font-semibold text-lg text-primary-600">
+        <h2 className="text-center font-semibold text-lg text-primary-500">
           Wishlist
         </h2>
         <Card title="budget" amount={budgetWishlist} />
@@ -104,7 +104,7 @@ export default function index() {
             );
           })}
       </section>
-      <div className="flex items-center justify-between py-2 bg-primary-600 rounded-t-lg px-6">
+      <div className="flex items-center justify-between py-2 bg-primary-500 rounded-t-lg px-6">
         <p className="uppercase text-white">Totaal</p>
         <span className="text-white font-medium">${total}</span>
       </div>

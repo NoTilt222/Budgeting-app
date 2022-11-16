@@ -7,7 +7,7 @@ export default function Header() {
   const [opened, setOpened] = useState(false);
   return (
     <>
-      <section className="bg-primary-600 flex px-6 justify-between items-center py-4 rounded-b-lg">
+      <section className="bg-primary-500 flex px-6 justify-between items-center py-4 rounded-b-lg">
         <Link href="/">
           <div className="w-14">
             <Image src="/BudgetBear.png" alt="logo" />
