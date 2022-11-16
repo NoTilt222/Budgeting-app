@@ -19,6 +19,7 @@ specifiers:
   postcss: ^8.4.19
   react: 18.2.0
   react-dom: 18.2.0
+  react-use-wishlist: ^1.0.1
   tailwindcss: ^3.2.4
   typescript: 4.8.4
 
@@ -38,6 +39,7 @@ dependencies:
   next: 13.0.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-use-wishlist: 1.0.1_react@18.2.0
   typescript: 4.8.4
 
 devDependencies:
@@ -2394,6 +2396,15 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-use-wishlist/1.0.1_react@18.2.0:
+    resolution: {integrity: sha512-i6m89LxSUJMaMdJHKiXl1J40WWqc3zmOqISllKgkPLDcQUQBkdfqCK2m+RVF+XtNwKCD6thP9I1uyC+Bz8QeLA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react/18.2.0:
