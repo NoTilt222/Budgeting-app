@@ -1,7 +1,11 @@
 import { Button, Group, PasswordInput, TextInput } from "@mantine/core";
 import { useForm } from "@mantine/form";
+import { showNotification } from "@mantine/notifications";
+import { useRouter } from "next/router";
 
 export default function Registerform() {
+  const localSignUp= typeof window !== 'undefined' ? localStorage.getItem("email"): null
+  
   const form = useForm({
     initialValues: {
       firstName: "",
@@ -16,8 +20,25 @@ export default function Registerform() {
         value !== values.password ? "Passwords do not match" : null,
     },
   });
+ const router = useRouter()
+ function signUp(){
+  if(form.values.firstName&&form.values.lastName&&form.values.email&&form.values.password&&form.values.confirmPassword)
+  {
+  localStorage.setItem("first name", form.values.firstName)
+  localStorage.setItem("last name", form.values.lastName)
+  localStorage.setItem("email", form.values.email)
+  localStorage.setItem("password", form.values.password)
+  localStorage.setItem("confirm password", form.values.confirmPassword)
+  router.push("/")
+  showNotification({
+    message: "Account created",
+    color: "green"
+  })
+  }
+}
   return (
-    <form onSubmit={form.onSubmit((values) => console.log(values))}>
+    <form onSubmit={form.onSubmit((values) => signUp() )}>
+     
       <div className="space-y-4">
         <TextInput
           autoComplete="off"
@@ -53,7 +74,7 @@ export default function Registerform() {
           <Button type="submit" radius="md" variant="outline">
             Sign Up
           </Button>
-        </Group>
+        </Group> 
       </div>
     </form>
   );

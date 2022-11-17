@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/BudgetBear.png" />
       </Head>
       <MantineProvider withGlobalStyles withNormalizeCSS>
-      <NotificationsProvider position="top-right" autoClose={800}>
+      <NotificationsProvider position="top-right" autoClose={1000}>
         <Component {...pageProps} />
       </NotificationsProvider>
       </MantineProvider>
